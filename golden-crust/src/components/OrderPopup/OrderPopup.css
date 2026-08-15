@@ -1,0 +1,218 @@
+.order-popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: fadeIn 0.25s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px) scale(0.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.order-popup {
+  background: var(--white);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 560px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+  animation: slideUp 0.3s ease;
+  position: relative;
+}
+
+.order-popup-header {
+  background: linear-gradient(135deg, var(--brown-dark), var(--brown));
+  padding: 28px 30px 22px;
+  border-radius: 20px 20px 0 0;
+  position: relative;
+}
+
+.order-popup-header h3 {
+  color: var(--white);
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+}
+
+.order-popup-header p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.88rem;
+}
+
+.order-popup-close {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: var(--white);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.order-popup-close:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.order-popup-body {
+  padding: 28px 30px 30px;
+}
+
+.order-popup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.order-popup-form .form-group input,
+.order-popup-form .form-group select,
+.order-popup-form .form-group textarea {
+  width: 100%;
+  padding: 13px 18px;
+  border: 2px solid var(--cream-dark);
+  border-radius: 12px;
+  font-size: 0.95rem;
+  background: var(--cream);
+  transition: var(--transition);
+  color: var(--black);
+}
+
+.order-popup-form .form-group input:focus,
+.order-popup-form .form-group select:focus,
+.order-popup-form .form-group textarea:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(200, 169, 81, 0.15);
+}
+
+.order-popup-form .form-group textarea {
+  resize: vertical;
+  min-height: 70px;
+}
+
+.order-popup-form .form-group select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236B6B6B' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+}
+
+.order-popup-form .btn-primary {
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 12px;
+  margin-top: 5px;
+}
+
+/* Section dividers */
+.form-section-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--brown);
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--cream-dark);
+  margin: 8px 0 6px;
+}
+
+/* Two-column row */
+.form-row {
+  display: flex;
+  gap: 12px;
+}
+.form-row .form-group {
+  flex: 1;
+}
+
+/* Radio group for delivery method */
+.form-radio-group {
+  display: flex;
+  gap: 12px;
+}
+.radio-label {
+  flex: 1;
+  cursor: pointer;
+}
+.radio-label input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.radio-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px;
+  border: 2px solid var(--cream-dark);
+  border-radius: 12px;
+  background: var(--cream);
+  transition: var(--transition);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.radio-label.active .radio-content {
+  border-color: var(--gold);
+  background: rgba(200, 169, 81, 0.1);
+  color: var(--brown-dark);
+}
+.radio-icon {
+  font-size: 1.3rem;
+}
+
+/* Delivery address fields (animated) */
+.delivery-address-fields {
+  animation: fadeIn 0.25s ease;
+}
+
+/* Checkbox group for dietary */
+.form-checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border: 2px solid var(--cream-dark);
+  border-radius: 10px;
+  background: var(--cream);
+  cursor: pointer;
+  font-size: 0.88rem;
+  transition: var(--transition);
+  user-select: none;
+}
+.checkbox-label:has(input:checked) {
+  border-color: var(--gold);
+  background: rgba(200, 169, 81, 0.1);
+  color: var(--brown-dark);
+  font-weight: 600;
+}
+.checkbox-label input {
+  accent-color: var(--gold);
+  width: 16px;
+  height: 16px;
+}

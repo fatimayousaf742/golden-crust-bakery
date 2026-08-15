@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Lato:wght@300;400;500;600;700&family=Great+Vibes&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gold: #C8A951;
+  --gold-light: #E8D48B;
+  --gold-dark: #A88B2D;
+  --brown: #5C3D2E;
+  --brown-light: #8B6F5E;
+  --brown-dark: #3A2518;
+  --cream: #FFF8F0;
+  --cream-dark: #F5E6D3;
+  --white: #FFFFFF;
+  --black: #1A1A1A;
+  --gray: #6B6B6B;
+  --gray-light: #B0B0B0;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.15);
+  --transition: all 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: var(--black);
+  background-color: var(--cream);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: 'Lato', sans-serif;
+}
+
+input, textarea, select {
+  font-family: 'Lato', sans-serif;
+  outline: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title span {
+  font-family: 'Great Vibes', cursive;
+  color: var(--gold);
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.section-title h2 {
+  font-size: 2.8rem;
+  color: var(--brown-dark);
+  margin-bottom: 15px;
+}
+
+.section-title p {
+  color: var(--gray);
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+  color: var(--white);
+  padding: 14px 36px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  transition: var(--transition);
+  box-shadow: 0 4px 15px rgba(200, 169, 81, 0.4);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(200, 169, 81, 0.5);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--gold);
+  padding: 14px 36px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 2px solid var(--gold);
+  transition: var(--transition);
+}
+
+.btn-secondary:hover {
+  background: var(--gold);
+  color: var(--white);
+  transform: translateY(-2px);
+}

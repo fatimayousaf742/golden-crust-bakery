@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="480" viewBox="0 0 1600 480">
+  <defs>
+    <radialGradient id="badge" cx="38%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#fff3c4"/>
+      <stop offset="45%" stop-color="#ffd977"/>
+      <stop offset="100%" stop-color="#f0a83c"/>
+    </radialGradient>
+    <linearGradient id="grainGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eeb354"/>
+      <stop offset="100%" stop-color="#c97f1e"/>
+    </linearGradient>
+    <g id="grain">
+      <path d="M0,0 C 6.5,3.5 6.5,17 0,24 C -6.5,17 -6.5,3.5 0,0 Z" fill="url(#grainGrad)" stroke="#a86a15" stroke-width="1.5" stroke-linejoin="round"/>
+    </g>
+    <g id="awn">
+      <path d="M0,0 C 1,9 1.5,20 0.5,30" fill="none" stroke="#c97f1e" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+  </defs>
+
+  <g transform="translate(240,240)">
+    <circle r="212" fill="#8a4a1f"/>
+    <circle r="196" fill="none" stroke="#f5c66b" stroke-width="10"/>
+    <circle r="184" fill="url(#badge)" stroke="#b06f1d" stroke-width="3"/>
+
+    <circle cx="-70" cy="-110" r="46" fill="#ffffff" opacity="0.18"/>
+
+    <path d="M-4,-152 L4,-152" stroke="#8a5a1f" stroke-width="6" stroke-linecap="round"/>
+
+    <g transform="translate(0,-120)">
+      <use href="#awn" transform="rotate(-22)"/>
+      <use href="#awn" transform="rotate(22)"/>
+      <use href="#grain" transform="rotate(-38) translate(0,-10)"/>
+      <use href="#grain" transform="rotate(38) translate(0,-10)"/>
+    </g>
+
+    <g>
+      <use href="#grain" transform="rotate(-38) translate(0,14)"/>
+      <use href="#grain" transform="rotate(38) translate(0,14)"/>
+    </g>
+    <g>
+      <use href="#grain" transform="rotate(-38) translate(0,44)"/>
+      <use href="#grain" transform="rotate(38) translate(0,44)"/>
+    </g>
+    <g>
+      <use href="#grain" transform="rotate(-38) translate(0,74)"/>
+      <use href="#grain" transform="rotate(38) translate(0,74)"/>
+    </g>
+    <g>
+      <use href="#grain" transform="rotate(-38) translate(0,104)"/>
+      <use href="#grain" transform="rotate(38) translate(0,104)"/>
+    </g>
+
+    <path d="M0,120 C-14,150 -8,168 0,196 C8,168 14,150 0,120 Z" fill="#8a5a1f" opacity="0"/>
+    <path d="M-4,120 C-34,146 -44,182 -40,210 C-16,196 0,176 4,140 Z" fill="#8a5a1f" stroke="#6e3f12" stroke-width="2"/>
+    <path d="M4,120 C34,146 44,182 40,210 C16,196 0,176 -4,140 Z" fill="#7a4a1a" stroke="#6e3f12" stroke-width="2"/>
+  </g>
+
+  <text x="520" y="262" font-family="Georgia, 'Times New Roman', serif" font-size="150" font-weight="700" fill="#6b3410" style="letter-spacing:3px">Golden Crust</text>
+
+  <text x="542" y="372" font-family="'Segoe Script', 'Brush Script MT', cursive" font-size="72" fill="#c77a22">Artisan Bakery</text>
+</svg>
