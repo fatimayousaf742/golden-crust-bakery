@@ -1,16 +1,20 @@
-# React + Vite
+# Golden Crust Bakery 🥐✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A full-stack online bakery web application featuring user authentication, interactive ordering, and PostgreSQL database integration.
 
-Currently, two official plugins are available:
+## 🚀 Features
+* **User Authentication:** Secure signup and login system integrated with PostgreSQL database.
+* **Bakery Interface:** Clean, interactive UI for browsing products and placing orders.
+* **Database Management:** Scalable schema for user data and order tracking.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Tech Stack
+* **Frontend:** React, Vite, CSS
+* **Backend:** Node.js, Express, PostgreSQL (pgAdmin 4)
+* **AI Chatbot:** Python, FastAPI, ChromaDB, Groq API
 
-## React Compiler
+## 🔧 Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/fatimayousaf742/golden-crust-bakery.git](https://github.com/fatimayousaf742/golden-crust-bakery.git)
+   cd golden-crust-bakery/golden-crust
